@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title Questionnair
+    body
+        h1 Which one do you want to eat？
+        form(method="post" action=path)
+            span Name:
+            input(type="text" name="name")
+            input(type="radio" name="favorite" value=firstItem)
+            span #{firstItem}
+            input(type="radio" name="favorite" value=secondItem)
+            span #{secondItem}
+            button(type="submit") Submit
